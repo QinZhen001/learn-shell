@@ -35,3 +35,36 @@ echo ${array[*]} # 使用*号访问数组所有的值
 
 
 echo "---------------------------------"
+
+
+
+# 数学运算
+# let 命令来实现运算
+let "a=1+2"
+let "b=$a*3"
+let "c=b/4"
+echo "c = $c"
+
+
+echo "---------------------------------"
+
+# swtich ... case
+n1="wd"
+case $n1 in
+  "hello")
+    echo "hello"
+    ;;
+  "world" | "word" | "wd")
+    echo "world"
+    ;;
+  *)
+    echo "other"
+    ;;
+esac
+
+
+
+echo "---------------------------------"
+
+
+
